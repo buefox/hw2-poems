@@ -1,25 +1,614 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8d4-vN-WP8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--唐詩選單-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="唐詩宋詞" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-vJ-pCN">
+                                <rect key="frame" x="226" y="104" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="李    白" backgroundImage="李白">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cfh-OA-7OW" kind="push" id="17B-W5-bvH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtt-wB-U4Z">
+                                <rect key="frame" x="226" y="253" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="白  居  易" backgroundImage="白居易">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hPi-z4-zyS" kind="push" id="bMO-J3-uf4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac3-iC-6J1">
+                                <rect key="frame" x="41" y="253" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="杜    甫" backgroundImage="杜甫">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5NP-TC-hi1" kind="push" id="csC-Dc-ID1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHR-ZH-3Kz">
+                                <rect key="frame" x="41" y="104" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="李  商  隱" backgroundImage="李商隱">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZTI-S5-Xnq" kind="push" id="v02-Yv-dGn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272566737844" blue="0.65477271077990706" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="唐詩選單" id="yWJ-UL-zpu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1375.5" y="200.5"/>
+        </scene>
+        <!--白居易-->
+        <scene sceneID="X3c-2c-5Yq">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="hPi-z4-zyS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hjn-Yf-xJC"/>
+                        <viewControllerLayoutGuide type="bottom" id="nRw-Xu-nFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hx9-fS-fyu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz9-Co-afk">
+                                <rect key="frame" x="164" y="137" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0of-rn-7xA">
+                                <rect key="frame" x="164" y="191" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="白居易" id="Frk-W9-7qF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc9-G8-OpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.5" y="-664.5"/>
+        </scene>
+        <!--唐詩-->
+        <scene sceneID="xIl-wR-whu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5sc-iI-Rcl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="唐詩" image="tang" id="TcT-7E-S07"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nNs-pH-R6f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xhy-qb-kvC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjI-xk-WzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="201"/>
+        </scene>
+        <!--宋詞選單-->
+        <scene sceneID="2TF-NV-Mqh">
+            <objects>
+                <viewController id="Mf7-zt-dxh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="weR-JY-GIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="PNa-A6-prl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1cX-Kr-3ko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twa-np-ofE">
+                                <rect key="frame" x="40" y="99" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="李  清  照" backgroundImage="李清照">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zX5-6r-xe6" kind="push" id="W62-fT-mqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-Pi-t5R">
+                                <rect key="frame" x="225" y="99" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="蘇    軾" backgroundImage="蘇軾">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e5t-cS-cXN" kind="push" id="kSV-vA-8nn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-Cc-aNi">
+                                <rect key="frame" x="225" y="248" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="歐  陽  脩" backgroundImage="歐陽脩">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wya-8G-S6Y" kind="push" id="9Wh-Rm-W9F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-8p-FTW">
+                                <rect key="frame" x="40" y="248" width="110" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-86"/>
+                                <state key="normal" title="范  仲  淹" backgroundImage="范仲淹">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="g0c-9f-aBo" kind="push" id="jJr-Ro-ZTG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880691015681" green="1" blue="0.99100178708106812" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="宋詞選單" id="Tpz-MK-zkO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d6-Lw-aBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="931"/>
+        </scene>
+        <!--歐陽脩-->
+        <scene sceneID="LQb-cH-Mlx">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Wya-8G-S6Y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ptp-nM-dqZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mfR-V0-HYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wnT-og-r92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-9p-jlg">
+                                <rect key="frame" x="164" y="131" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-37-v1s">
+                                <rect key="frame" x="164" y="185" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="歐陽脩" id="qcZ-rJ-9jY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOH-iL-ts1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5" y="1680.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="f9K-Ph-BXb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8d4-vN-WP8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4Xv-xX-kI3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5sc-iI-Rcl" kind="relationship" relationship="viewControllers" id="Obp-CZ-Pov"/>
+                        <segue destination="Nce-90-nWQ" kind="relationship" relationship="viewControllers" id="OjC-tf-SXO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUu-IS-0Yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="201"/>
+        </scene>
+        <!--宋詞-->
+        <scene sceneID="9GE-fr-Khw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nce-90-nWQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="宋詞" image="song" id="xji-jJ-A9H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rm7-Rp-tvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mf7-zt-dxh" kind="relationship" relationship="rootViewController" id="k50-T4-3qF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWz-Pf-yGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="931"/>
+        </scene>
+        <!--杜甫-->
+        <scene sceneID="j66-qJ-Aux">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="5NP-TC-hi1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wK9-ew-ETb"/>
+                        <viewControllerLayoutGuide type="bottom" id="SPl-1s-IHD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M6J-Y7-9kp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev6-j9-Ohk">
+                                <rect key="frame" x="164" y="137" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV5-Wk-1TQ">
+                                <rect key="frame" x="164" y="191" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="杜甫" id="5tR-Si-ZQS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsS-om-G0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5" y="-664.5"/>
+        </scene>
+        <!--李白-->
+        <scene sceneID="xGD-cv-ieP">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Cfh-OA-7OW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KF4-WO-mb1"/>
+                        <viewControllerLayoutGuide type="bottom" id="9z3-Zk-5l0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7u5-Bz-x0k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb1-Am-XUu">
+                                <rect key="frame" x="164" y="137" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-SK-mJb">
+                                <rect key="frame" x="164" y="191" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="李白" id="uF4-o1-3oI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PwM-ew-NVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.5" y="-664.5"/>
+        </scene>
+        <!--樂遊原-->
+        <scene sceneID="5FD-0l-LBf">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="1qC-PO-Ef4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jA2-CL-wps"/>
+                        <viewControllerLayoutGuide type="bottom" id="mwE-kD-bXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pWI-Ij-djU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KBC-AG-m2N">
+                                <rect key="frame" x="140" y="240" width="94" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">向晚意不適，
+ 驅車登古原。 
+夕陽無限好，
+ 只是近黃昏。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="樂遊原" id="Vko-HK-aDQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zm1-7F-Anm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.5" y="-1389.5"/>
+        </scene>
+        <!--李商隱-->
+        <scene sceneID="i1v-Rs-146">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="ZTI-S5-Xnq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wrx-US-9Ug"/>
+                        <viewControllerLayoutGuide type="bottom" id="xFQ-XD-5t7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjG-la-8Pz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LX3-10-d79">
+                                <rect key="frame" x="157" y="190" width="60" height="30"/>
+                                <state key="normal" title="夜雨寄北"/>
+                                <connections>
+                                    <segue destination="9Lw-X4-F8s" kind="push" id="Gvf-T3-wGX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TQ-zD-v2E">
+                                <rect key="frame" x="164" y="136" width="46" height="30"/>
+                                <state key="normal" title="樂遊原"/>
+                                <connections>
+                                    <segue destination="1qC-PO-Ef4" kind="push" id="csJ-Sq-Edl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="李商隱" id="i6M-Vn-qum"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuM-me-pZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.5" y="-664.5"/>
+        </scene>
+        <!--范仲淹-->
+        <scene sceneID="DAF-IV-isf">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="g0c-9f-aBo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NSg-SA-YDc"/>
+                        <viewControllerLayoutGuide type="bottom" id="VPM-D6-TfT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YKn-ST-Mk0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aT8-lN-Opq">
+                                <rect key="frame" x="164" y="131" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osA-My-0LT">
+                                <rect key="frame" x="164" y="185" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="范仲淹" id="Sh7-je-lSW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMU-km-hZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5" y="1680.5"/>
+        </scene>
+        <!--蘇軾-->
+        <scene sceneID="t7a-IE-iVe">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="e5t-cS-cXN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q8X-K8-F6Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyj-oK-e7n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0PR-jJ-dLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM6-t6-SnD">
+                                <rect key="frame" x="164" y="129" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6Q-ml-low">
+                                <rect key="frame" x="164" y="183" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="蘇軾" id="08J-OX-1n1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bw-Ki-k4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235.5" y="1680.5"/>
+        </scene>
+        <!--李清照-->
+        <scene sceneID="nzN-mC-2A6">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="zX5-6r-xe6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="apR-aP-T5E"/>
+                        <viewControllerLayoutGuide type="bottom" id="jRy-Xh-IxA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ubg-qy-DkY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-vw-nFu">
+                                <rect key="frame" x="164" y="180" width="46" height="30"/>
+                                <state key="normal" title="菩薩蠻"/>
+                                <connections>
+                                    <segue destination="irG-Ae-SiK" kind="push" id="U1m-oy-pAt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj7-X4-YEQ">
+                                <rect key="frame" x="144" y="126" width="86" height="30"/>
+                                <state key="normal" title="如夢令-春晚"/>
+                                <connections>
+                                    <segue destination="mCn-OB-TPx" kind="push" id="CQm-Wy-dYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="李清照" id="8MM-6I-LVp"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57e-ks-Fvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933.5" y="1680.5"/>
+        </scene>
+        <!--菩薩蠻-->
+        <scene sceneID="S4H-Zy-ULd">
+            <objects>
+                <viewController id="irG-Ae-SiK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CbI-JH-ASc"/>
+                        <viewControllerLayoutGuide type="bottom" id="uqx-Dd-SFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvp-zc-KKi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x2V-AW-yhd">
+                                <rect key="frame" x="67" y="198" width="240" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">風柔日薄春猶早，夾衫乍著心情好。
+
+睡起覺微寒，梅花鬢上殘。
+
+故鄉何處是？忘了除非醉。
+
+沈水臥時燒，香消酒未消。
+
+
+
+歸鴻聲斷殘雲碧，背窗雪落罏煙直。
+
+燭底鳳釵明，釵頭人勝輕。
+
+角聲催曉漏，曙色回牛鬥。
+
+春意看花難，西風留舊寒。
+
+
+
+綠雲鬢上飛金雀，悉眉翠歛春煙薄。
+
+香閣掩芙蓉，畫屏山幾重。
+
+窗寒天欲曙，猶結同心苣。
+
+啼粉污羅衣，問郎何日歸？
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="菩薩蠻" id="LQr-HU-lIh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EU5-wp-Uj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.5" y="2425.5"/>
+        </scene>
+        <!--夜雨寄北-->
+        <scene sceneID="MgZ-gE-KgP">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="9Lw-X4-F8s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ED8-RT-iFc"/>
+                        <viewControllerLayoutGuide type="bottom" id="LW1-bf-8dO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Fk-Fj-J12">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0CF-M1-hZn">
+                                <rect key="frame" x="125" y="242" width="124" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">君問歸期未有期，                              
+巴山夜雨漲秋池。
+ 何當共剪西窗燭，
+ 卻話巴山夜雨時。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98754272570000001" blue="0.65477271079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="夜雨寄北" id="gkE-FI-U7J"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOW-B8-lvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523.5" y="-1389.5"/>
+        </scene>
+        <!--如夢令-春晚-->
+        <scene sceneID="SK2-WD-3SP">
+            <objects>
+                <viewController id="mCn-OB-TPx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PMR-jK-3XA"/>
+                        <viewControllerLayoutGuide type="bottom" id="EuG-G8-fKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Bh-LZ-4CT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cYm-kc-jA2">
+                                <rect key="frame" x="80" y="220" width="215" height="109"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">昨夜雨疏風驟，濃睡不消殘酒。
+
+試問卷簾人，卻道海棠依舊。
+
+知否？知否？應是綠肥紅瘦。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73263880690000005" green="1" blue="0.99100178709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="如夢令-春晚" id="BJD-ne-YSk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ot7-cM-OAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523.5" y="2425.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="song" width="30" height="30"/>
+        <image name="tang" width="30" height="30"/>
+        <image name="李商隱" width="285" height="307"/>
+        <image name="李清照" width="350" height="480"/>
+        <image name="李白" width="329" height="480"/>
+        <image name="杜甫" width="480" height="634"/>
+        <image name="歐陽脩" width="434" height="480"/>
+        <image name="白居易" width="337" height="480"/>
+        <image name="范仲淹" width="327" height="480"/>
+        <image name="蘇軾" width="461" height="480"/>
+    </resources>
 </document>
